@@ -24,9 +24,7 @@
 
 ## Technology stack
 **Frontend**
-- HTML
-- SCSS
-- JS
+- Gulp | Webpack (HTML, SCSS, JS)
 
 **Backend**
 - Laravel (PHP)
