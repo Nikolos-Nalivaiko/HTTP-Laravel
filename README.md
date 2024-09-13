@@ -40,10 +40,10 @@
 ## Roles and access rights
 **Guest** - Not an authorized user.\
 **User** - Authorized user, individual.\
-**Company** - Authorized user, company.\
+**Company** - Authorized user, company.
 
-_In the planning stage._\
-**Administrator** - Administrator
+_In the planning stage_\
+**Admin** - Administrator
 
 ## Controllers
 **HomeController** - Responsible for displaying the home page
@@ -57,18 +57,27 @@ _In the planning stage._\
 **RegisterController** - Responsible for user registration. Uses _StoreUserRequest_, _StoreCompanyRequest_ for validation, _UserService_ class-service for creating a user in the database, loading an avatar into the database and into the storage folder.
 
 ## Requests
-**CargoFilterRequest** - validation of cargo search filters.\
-**CargoRequest** - validation for creating a cargo.\
-**LoginRequest** - validation of authorization data.\
-**StoreUserRequest** - validation for creating a user of type 'user'\
+**CargoFilterRequest** - validation of cargo search filters.
+
+**CargoRequest** - validation for creating a cargo.
+
+**LoginRequest** - validation of authorization data.
+
+**StoreUserRequest** - validation for creating a user of type 'user'
+
 **StoreCompanyRequest** - validation for creating a user of type 'company'
 
 ## Models
-**Avatar** - user avatars, has a one-to-one relationship with _User_\
-**Cargo** - cargoes, has a one-to-one relationship with load_region_id, load_city_id, unload_region_id, unload_city_id also has a polymorphic relationship with QrCode\
-**City** - Cities\
-**QrCode** - Qr-codes, has a polymorphic relationship as it can work with Cargo and Cars\
-**Region** - Regions\
+**Avatar** - user avatars, has a one-to-one relationship with _User_
+
+**Cargo** - cargoes, has a one-to-one relationship with load_region_id, load_city_id, unload_region_id, unload_city_id also has a polymorphic relationship with QrCode
+
+**City** - Cities
+
+**QrCode** - Qr-codes, has a polymorphic relationship as it can work with Cargo and Cars
+
+**Region** - Regions
+
 **User** - Users, has a one-to-one relationship with avatars
 
 ## Services
